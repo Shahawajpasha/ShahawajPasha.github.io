@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shahawaj Pasha | Data Analyst Portfolio</title>
+
   <style>
     body {
       margin: 0;
@@ -11,11 +12,13 @@
       background: radial-gradient(circle at top, #0f172a, #020617 70%);
       color: #e5e7eb;
     }
+
     header {
       padding: 70px 20px 60px;
       text-align: center;
       background: linear-gradient(135deg, #1e293b, #020617);
     }
+
     .profile-pic {
       width: 140px;
       height: 140px;
@@ -25,10 +28,12 @@
       margin-bottom: 20px;
       box-shadow: 0 0 30px rgba(56,189,248,0.4);
     }
+
     header h1 {
       font-size: 2.7rem;
       margin-bottom: 10px;
     }
+
     header p {
       color: #94a3b8;
       font-size: 1.15rem;
@@ -36,6 +41,7 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+
     .btn {
       display: inline-block;
       margin-top: 25px;
@@ -47,20 +53,24 @@
       background: linear-gradient(135deg, #38bdf8, #22d3ee);
       box-shadow: 0 10px 25px rgba(56,189,248,0.4);
     }
+
     section {
       padding: 60px 10%;
     }
+
     h2 {
       color: #38bdf8;
       margin-bottom: 22px;
       font-size: 1.9rem;
     }
+
     .about-text {
       max-width: 900px;
       line-height: 1.8;
       color: #cbd5f5;
       font-size: 1.02rem;
     }
+
     .skills span {
       display: inline-block;
       background: linear-gradient(135deg, #1e293b, #020617);
@@ -71,37 +81,44 @@
       border: 1px solid #334155;
       box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 28px;
     }
+
     .card {
-      background: linear-gradient(180deg, #020617, #020617);
+      background: #020617;
       padding: 28px;
       border-radius: 18px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.5);
       border: 1px solid #1e293b;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 25px 50px rgba(0,0,0,0.7);
     }
+
     .card h3 {
       margin-top: 0;
       color: #7dd3fc;
     }
+
     .card p {
       color: #cbd5f5;
       font-size: 0.95rem;
       line-height: 1.6;
     }
+
     .tools {
       font-size: 0.85rem;
       color: #94a3b8;
       margin-top: 12px;
     }
+
     .card a {
       display: inline-block;
       margin-top: 14px;
@@ -109,13 +126,29 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .contact a {
-      display: inline-block;
-      margin: 6px 0;
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 600;
+
+    /* ✅ SOCIAL ICON FIX */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 20px;
     }
+
+    .social-links img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      opacity: 0.85;
+      transition: 0.3s ease;
+    }
+
+    .social-links img:hover {
+      transform: translateY(-4px) scale(1.15);
+      opacity: 1;
+      filter: drop-shadow(0 0 10px rgba(56,189,248,0.8));
+    }
+
     footer {
       text-align: center;
       padding: 30px 10%;
@@ -126,38 +159,42 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <!-- Add your photo in the repo and name it profile.jpg -->
   <img src="profile.jpg" alt="Shahawaj Pasha" class="profile-pic" />
   <h1>Shahawaj Pasha</h1>
   <p>
-    Aspiring Data Analyst with a strong interest in transforming raw data into
-    meaningful business insights. Skilled in Excel, SQL, Python, Power BI, and SPSS,
-    with a passion for data storytelling and visualization.
+    Aspiring Data Analyst with a strong interest in transforming raw data into meaningful
+    business insights using analytics and visualization.
   </p>
+
   <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+
+  <div class="social-links">
+    <a href="https://github.com/shahawajpasha" target="_blank">
+      <img src="github.png" alt="GitHub">
+    </a>
+    <a href="https://linkedin.com/in/shahawajpasha" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:shahawajpasha@gmail.com">
+      <img src="gmail.png" alt="Email">
+    </a>
+  </div>
 </header>
 
 <section>
   <h2>About Me</h2>
   <div class="about-text">
     <p>
-      I am an aspiring Data Analyst who enjoys working at the intersection of data,
-      logic, and business decision-making. I specialize in cleaning messy datasets,
-      exploring patterns through analysis, and presenting insights using interactive
-      dashboards and visualizations.
+      I am an aspiring Data Analyst focused on turning raw data into clear, actionable insights.
+      I enjoy cleaning data, exploring trends, and building dashboards that support decision-making.
     </p>
     <p>
-      My approach to data analysis focuses on asking the right questions, understanding
-      the business context, and translating numbers into clear, actionable insights.
-      I am continuously improving my skills through hands-on projects involving real-world
-      datasets across sales, customer behavior, and operations.
-    </p>
-    <p>
-      I am currently seeking entry-level data analyst opportunities where I can contribute
-      analytical thinking, technical skills, and a strong learning mindset to a data-driven team.
+      My work involves real-world datasets across sales and customer behavior, using Excel, SQL,
+      Python, and Power BI to uncover patterns and communicate results effectively.
     </p>
   </div>
 </section>
@@ -165,14 +202,14 @@
 <section>
   <h2>Skills</h2>
   <div class="skills">
-    <span>Excel (Pivot Tables, Lookups)</span>
-    <span>SQL (Joins, Aggregations)</span>
-    <span>Python (Pandas, NumPy)</span>
+    <span>Excel</span>
+    <span>SQL</span>
+    <span>Python</span>
     <span>Power BI</span>
     <span>Tableau</span>
     <span>SPSS</span>
     <span>Data Cleaning</span>
-    <span>Exploratory Data Analysis</span>
+    <span>EDA</span>
     <span>Data Visualization</span>
   </div>
 </section>
@@ -183,57 +220,28 @@
 
     <div class="card">
       <h3>Sales Performance Dashboard</h3>
-      <p>
-        Designed an interactive Power BI dashboard to analyze sales trends,
-        identify top-performing products, and evaluate regional revenue performance
-        to support data-driven business decisions.
-      </p>
+      <p>Interactive Power BI dashboard analyzing sales trends and regional performance.</p>
       <div class="tools">Tools: Power BI, Excel</div>
-      <a href="#" target="_blank">View Dashboard</a>
+      <a href="#">View Dashboard</a>
     </div>
 
     <div class="card">
       <h3>Customer Churn Analysis</h3>
-      <p>
-        Conducted exploratory data analysis using Python to identify churn patterns
-        and key factors influencing customer retention, supported by clear visualizations.
-      </p>
-      <div class="tools">Tools: Python, Pandas, Matplotlib</div>
-      <a href="#" target="_blank">View GitHub Project</a>
+      <p>Python-based analysis identifying churn patterns and retention drivers.</p>
+      <div class="tools">Tools: Python, Pandas</div>
+      <a href="#">View GitHub</a>
     </div>
 
     <div class="card">
       <h3>SQL Case Study</h3>
-      <p>
-        Solved business-focused questions using SQL queries involving joins,
-        aggregations, and subqueries to extract meaningful insights from relational data.
-      </p>
+      <p>Business problem-solving using joins, aggregations, and subqueries.</p>
       <div class="tools">Tools: SQL</div>
-      <a href="#" target="_blank">View SQL Repository</a>
+      <a href="#">View Repository</a>
     </div>
 
   </div>
 </section>
 
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-
-  <div class="social-links">
-    <a href="https://github.com/shahawajpasha" target="_blank">
-      <img src="github.png" alt="GitHub">
-    </a>
-
-    <a href="https://linkedin.com/in/shahawajpasha" target="_blank">
-      <img src="linkedin.png" alt="LinkedIn">
-    </a>
-
-    <a href="mailto:shahawajpasha@gmail.com">
-      <img src="gmail.png" alt="Email">
-    </a>
-  </div>
-</section>
-
-  
 <footer>
   © 2026 Shahawaj Pasha | Data Analyst Portfolio
 </footer>

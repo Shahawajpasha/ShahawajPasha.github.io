@@ -3,52 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shahawaj Pasha's Portfolio</title>
+  <title>Shahawaj Pasha | Data Analyst Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0f172a;
+      background: radial-gradient(circle at top, #0f172a, #020617 70%);
       color: #e5e7eb;
     }
     header {
-      padding: 40px;
+      padding: 70px 20px 60px;
       text-align: center;
       background: linear-gradient(135deg, #1e293b, #020617);
     }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+      box-shadow: 0 0 30px rgba(56,189,248,0.4);
+    }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       margin-bottom: 10px;
     }
     header p {
       color: #94a3b8;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #020617;
+      background: linear-gradient(135deg, #38bdf8, #22d3ee);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.4);
     }
     section {
-      padding: 50px 10%;
+      padding: 60px 10%;
     }
     h2 {
       color: #38bdf8;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      font-size: 1.9rem;
+    }
+    .about-text {
+      max-width: 900px;
+      line-height: 1.8;
+      color: #cbd5f5;
+      font-size: 1.02rem;
     }
     .skills span {
       display: inline-block;
-      background: #1e293b;
-      padding: 10px 15px;
-      border-radius: 20px;
-      margin: 5px;
+      background: linear-gradient(135deg, #1e293b, #020617);
+      padding: 11px 16px;
+      border-radius: 22px;
+      margin: 7px;
       font-size: 0.9rem;
+      border: 1px solid #334155;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
     }
     .card {
-      background: #020617;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background: linear-gradient(180deg, #020617, #020617);
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      border: 1px solid #1e293b;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.7);
     }
     .card h3 {
       margin-top: 0;
@@ -57,78 +95,133 @@
     .card p {
       color: #cbd5f5;
       font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .tools {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 12px;
     }
     .card a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 14px;
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
     }
+    .contact a {
+      display: inline-block;
+      margin: 6px 0;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 10%;
       background: #020617;
       color: #64748b;
       font-size: 0.9rem;
+      border-top: 1px solid #1e293b;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <!-- Add your photo in the repo and name it profile.jpg -->
+  <img src="profile.jpg" alt="Shahawaj Pasha" class="profile-pic" />
   <h1>Shahawaj Pasha</h1>
-  <p>Aspiring Data Analyst | Excel • SQL • Python • Power BI • SPSS</p>
+  <p>
+    Aspiring Data Analyst with a strong interest in transforming raw data into
+    meaningful business insights. Skilled in Excel, SQL, Python, Power BI, and SPSS,
+    with a passion for data storytelling and visualization.
+  </p>
+  <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
 </header>
 
 <section>
-  <h2>About Me.....</h2>
-  <p>
-    I am an aspiring data analyst passionate about transforming raw data into meaningful insights. 
-    I enjoy working with datasets, building dashboards, and telling stories through numbers.
-  </p>
+  <h2>About Me</h2>
+  <div class="about-text">
+    <p>
+      I am an aspiring Data Analyst who enjoys working at the intersection of data,
+      logic, and business decision-making. I specialize in cleaning messy datasets,
+      exploring patterns through analysis, and presenting insights using interactive
+      dashboards and visualizations.
+    </p>
+    <p>
+      My approach to data analysis focuses on asking the right questions, understanding
+      the business context, and translating numbers into clear, actionable insights.
+      I am continuously improving my skills through hands-on projects involving real-world
+      datasets across sales, customer behavior, and operations.
+    </p>
+    <p>
+      I am currently seeking entry-level data analyst opportunities where I can contribute
+      analytical thinking, technical skills, and a strong learning mindset to a data-driven team.
+    </p>
+  </div>
 </section>
 
 <section>
   <h2>Skills</h2>
   <div class="skills">
-    <span>Excel</span>
-    <span>SQL</span>
-    <span>Python</span>
-    <span>Pandas</span>
+    <span>Excel (Pivot Tables, Lookups)</span>
+    <span>SQL (Joins, Aggregations)</span>
+    <span>Python (Pandas, NumPy)</span>
     <span>Power BI</span>
     <span>Tableau</span>
+    <span>SPSS</span>
     <span>Data Cleaning</span>
-    <span>EDA</span>
+    <span>Exploratory Data Analysis</span>
+    <span>Data Visualization</span>
   </div>
 </section>
 
 <section>
   <h2>Projects & Dashboards</h2>
   <div class="projects">
+
     <div class="card">
       <h3>Sales Performance Dashboard</h3>
-      <p>Analyzed sales data to identify revenue trends, top products, and regional performance.</p>
-      <a href="#">View Dashboard</a>
+      <p>
+        Designed an interactive Power BI dashboard to analyze sales trends,
+        identify top-performing products, and evaluate regional revenue performance
+        to support data-driven business decisions.
+      </p>
+      <div class="tools">Tools: Power BI, Excel</div>
+      <a href="#" target="_blank">View Dashboard</a>
     </div>
+
     <div class="card">
       <h3>Customer Churn Analysis</h3>
-      <p>Used Python to analyze customer churn patterns and visualize key insights.</p>
-      <a href="#">View Project</a>
+      <p>
+        Conducted exploratory data analysis using Python to identify churn patterns
+        and key factors influencing customer retention, supported by clear visualizations.
+      </p>
+      <div class="tools">Tools: Python, Pandas, Matplotlib</div>
+      <a href="#" target="_blank">View GitHub Project</a>
     </div>
+
     <div class="card">
       <h3>SQL Case Study</h3>
-      <p>Performed complex SQL queries including joins, aggregations, and subqueries.</p>
-      <a href="#">View GitHub</a>
+      <p>
+        Solved business-focused questions using SQL queries involving joins,
+        aggregations, and subqueries to extract meaningful insights from relational data.
+      </p>
+      <div class="tools">Tools: SQL</div>
+      <a href="#" target="_blank">View SQL Repository</a>
     </div>
+
   </div>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: shahawajpasha@gmail.com</p>
-  <p>GitHub: github.com/shahawajpasha</p>
-  <p>LinkedIn: linkedin.com/in/shahawajpasha</p>
+  <div class="contact">
+    <a href="mailto:shahawajpasha@gmail.com">📧 shahawajpasha@gmail.com</a><br />
+    <a href="https://github.com/shahawajpasha" target="_blank">🐙 GitHub: github.com/shahawajpasha</a><br />
+    <a href="https://linkedin.com/in/shahawajpasha" target="_blank">💼 LinkedIn: linkedin.com/in/shahawajpasha</a>
+  </div>
 </section>
 
 <footer>

@@ -157,6 +157,46 @@
       font-size: 0.9rem;
       border-top: 1px solid #1e293b;
     }
+
+    /* Certifications & Education */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background: linear-gradient(180deg, #020617, #020617);
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+}
+
+.cert-card h3 {
+  margin: 0 0 8px;
+  color: #7dd3fc;
+  font-size: 1.05rem;
+}
+
+.cert-card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.cert-meta {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
   </style>
 </head>
 
@@ -211,6 +251,57 @@
     <span>Data Cleaning</span>
     <span>EDA</span>
     <span>Data Visualization</span>
+  </div>
+</section>
+
+  <section>
+  <h2>Certifications</h2>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <h3>Google Data Analytics Advanced </h3>
+      <p>Google</p>
+      <div class="cert-meta">Skills: KPI Reporting, User Behaviour Analysis, Visualization /div>
+    </div>
+
+    <div class="cert-card">
+      <h3>Microsoft Power BI Data Analyst</h3>
+      <p>Microsoft</p>
+      <div class="cert-meta">Skills: Power BI, DAX, Data Modeling</div>
+    </div>
+
+    <div class="cert-card">
+      <h3>Data Analytics and Visualisation</h3>
+      <p>Accenture-Forage</p>
+      <div class="cert-meta">Skills: Pandas, NumPy, EDA</div>
+    </div>
+
+    <div class="cert-card">
+      <h3>Qlik Sense Business Analyst</h3>
+      <p>Qlik</p>
+      <div class="cert-meta">Built KPI Focused Dashboards, modeled data, Ensured Accurate Insights For Decision Making</div>
+    </div>
+
+    <div class="cert-card">
+      <h3>Qlik Sense Data Architect</h3>
+      <p>Qlik</p>
+      <div class="cert-meta">Learned how to transform raw data into efficient, scalable, data models and delivering high performance Business Intelligence Solutions</div>
+    </div>
+  </div>
+</section>
+
+  <section>
+  <h2>Education</h2>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <h3>B.Sc in Data Science</h3>
+      <p>Kristu Jayanti College</p>
+      <div class="cert-meta">Year: 2023 – 2026</div>
+    </div>
+
   </div>
 </section>
 

@@ -65,11 +65,14 @@
     }
 
     .about-text {
-      max-width: 900px;
-      line-height: 1.8;
-      color: #cbd5f5;
-      font-size: 1.02rem;
-    }
+  max-width: 900px;
+  margin: 0 auto;        /* ⭐ THIS centers it properly */
+  line-height: 1.8;
+  color: #cbd5f5;
+  font-size: 1.02rem;
+  text-align: left;     /* keeps text readable */
+}
+
 
     .skills span {
       display: inline-block;
@@ -166,26 +169,47 @@
 
 <section>
   <h2>About Me</h2>
-  <p class="about-text">
-    I am a passionate and detail-oriented aspiring Data Analyst with a strong
-    foundation in data analysis, visualization, and business insights.
-    I enjoy working with data to uncover trends, solve problems, and support
-    informed decision-making. My goal is to grow into a data-driven professional
-    who bridges the gap between raw data and real-world impact.
-  </p>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <h3>Bachelor’s Degree</h3>
+  <div class="about-text">
     <p>
-      Built a strong analytical mindset through academic coursework while
-      developing hands-on skills in data handling, reporting, and problem-solving.
-      Actively complemented academics with certifications and real-world projects.
+      I am a passionate and detail-oriented aspiring Data Analyst with a strong foundation
+      in data analysis, visualization, and business intelligence. I enjoy working with raw,
+      unstructured data and transforming it into meaningful insights that support strategic
+      decision-making.
+    </p>
+
+    <p>
+      My learning journey has involved hands-on experience with real-world datasets,
+      where I focused on data cleaning, exploratory data analysis, KPI reporting, and
+      dashboard creation using tools like Excel, SQL, and Power BI.
+    </p>
+
+    <p>
+      I am driven by curiosity and problem-solving, and my goal is to grow into a
+      data-driven professional who bridges the gap between technical analysis and
+      business impact.
     </p>
   </div>
 </section>
+
+
+<section>
+  <h2>Education</h2>
+
+  <div class="cert-grid">
+    <div class="cert-card">
+      <h3>B.Sc in Data Science</h3>
+      <p>Kristu Jayanti College</p>
+      <div class="cert-meta">Batch: 2023 – 2026</div>
+      <p>
+        Building a strong foundation in data analysis, statistics, and problem-solving through
+        academic coursework and hands-on projects. Gaining practical exposure to data handling,
+        analytical thinking, and real-world business problem analysis while actively complementing
+        academics with certifications and applied learning.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 <section>
   <h2>Skills</h2>

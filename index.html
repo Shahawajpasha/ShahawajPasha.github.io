@@ -99,11 +99,9 @@
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.7);
     }
 
     .card h3 {
-      margin-top: 0;
       color: #7dd3fc;
     }
 
@@ -113,43 +111,9 @@
       line-height: 1.6;
     }
 
-    .tools {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      margin-top: 12px;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 14px;
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 22px;
-      margin-top: 20px;
-    }
-
-    .social-links img {
-      width: 32px;
-      height: 32px;
-      opacity: 0.85;
-      transition: 0.3s ease;
-    }
-
-    .social-links img:hover {
-      transform: translateY(-4px) scale(1.15);
-      opacity: 1;
-      filter: drop-shadow(0 0 10px rgba(56,189,248,0.8));
-    }
-
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
 
@@ -159,32 +123,25 @@
       border-radius: 16px;
       border: 1px solid #1e293b;
       box-shadow: 0 18px 35px rgba(0,0,0,0.5);
-      transition: 0.3s ease;
-    }
-
-    .cert-card:hover {
-      transform: translateY(-6px);
     }
 
     .cert-card h3 {
       color: #7dd3fc;
-      margin-bottom: 6px;
     }
-/* Certificate link color */
-   .cert-card a {
-  color: #f8fafc; /* off-white */
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.cert-card a:hover {
-  color: #38bdf8;
-}
 
     .cert-meta {
       font-size: 0.8rem;
       color: #94a3b8;
-      margin-bottom: 8px;
+    }
+
+    .cert-card a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cert-card a:hover {
+      color: #38bdf8;
     }
 
     footer {
@@ -205,13 +162,73 @@
   <h1>Shahawaj Pasha</h1>
   <p>Aspiring Data Analyst transforming raw data into meaningful business insights.</p>
   <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
-
-  <div class="social-links">
-    <a href="https://github.com/shahawajpasha" target="_blank"><img src="github.png"></a>
-    <a href="https://linkedin.com/in/shahawajpasha" target="_blank"><img src="linkedin.png"></a>
-    <a href="mailto:shahawajpasha@gmail.com"><img src="gmail.png"></a>
-  </div>
 </header>
+
+<section>
+  <h2>About Me</h2>
+  <p class="about-text">
+    I am a passionate and detail-oriented aspiring Data Analyst with a strong
+    foundation in data analysis, visualization, and business insights.
+    I enjoy working with data to uncover trends, solve problems, and support
+    informed decision-making. My goal is to grow into a data-driven professional
+    who bridges the gap between raw data and real-world impact.
+  </p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <h3>Bachelor’s Degree</h3>
+    <p>
+      Built a strong analytical mindset through academic coursework while
+      developing hands-on skills in data handling, reporting, and problem-solving.
+      Actively complemented academics with certifications and real-world projects.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Excel</span>
+    <span>Power BI</span>
+    <span>SQL</span>
+    <span>Data Cleaning</span>
+    <span>EDA</span>
+    <span>Data Visualization</span>
+    <span>Business Analytics</span>
+    <span>KPI Reporting</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Sales Performance Dashboard</h3>
+      <p>
+        Built an interactive Power BI dashboard to track KPIs, analyze trends,
+        and provide actionable insights for business decision-making.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Data Analysis</h3>
+      <p>
+        Cleaned and analyzed customer datasets to identify behavior patterns,
+        churn indicators, and growth opportunities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Excel Business Insights</h3>
+      <p>
+        Used Excel for data cleaning, pivot analysis, and visualization to
+        support stakeholder reporting and insights.
+      </p>
+    </div>
+  </div>
+</section>
 
 <section>
   <h2>Certifications</h2>
@@ -286,7 +303,6 @@
 
   </div>
 </section>
-
 
 <footer>
   © 2026 Shahawaj Pasha | Data Analyst Portfolio

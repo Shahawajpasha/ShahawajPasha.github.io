@@ -127,7 +127,6 @@
       font-weight: bold;
     }
 
-    /* ✅ SOCIAL ICON FIX */
     .social-links {
       display: flex;
       justify-content: center;
@@ -138,7 +137,6 @@
     .social-links img {
       width: 32px;
       height: 32px;
-      object-fit: contain;
       opacity: 0.85;
       transition: 0.3s ease;
     }
@@ -149,6 +147,36 @@
       filter: drop-shadow(0 0 10px rgba(56,189,248,0.8));
     }
 
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .cert-card {
+      background: #020617;
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.5);
+      transition: 0.3s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .cert-card h3 {
+      color: #7dd3fc;
+      margin-bottom: 6px;
+    }
+
+    .cert-meta {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
     footer {
       text-align: center;
       padding: 30px 10%;
@@ -157,215 +185,74 @@
       font-size: 0.9rem;
       border-top: 1px solid #1e293b;
     }
-
-    /* Certifications & Education */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.cert-card {
-  background: linear-gradient(180deg, #020617, #020617);
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid #1e293b;
-  box-shadow: 0 18px 35px rgba(0,0,0,0.5);
-  transition: 0.3s ease;
-}
-
-.cert-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 45px rgba(0,0,0,0.7);
-}
-
-.cert-card h3 {
-  margin: 0 0 8px;
-  color: #7dd3fc;
-  font-size: 1.05rem;
-}
-
-.cert-card p {
-  margin: 4px 0;
-  font-size: 0.9rem;
-  color: #cbd5f5;
-}
-
-.cert-meta {
-  font-size: 0.8rem;
-  color: #94a3b8;
-  margin-top: 6px;
-}
-
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Shahawaj Pasha" class="profile-pic" />
+  <img src="profile.jpg" class="profile-pic" />
   <h1>Shahawaj Pasha</h1>
-  <p>
-    Aspiring Data Analyst with a strong interest in transforming raw data into meaningful
-    business insights using analytics and visualization.
-  </p>
-
+  <p>Aspiring Data Analyst transforming raw data into meaningful business insights.</p>
   <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
 
   <div class="social-links">
-    <a href="https://github.com/shahawajpasha" target="_blank">
-      <img src="github.png" alt="GitHub">
-    </a>
-    <a href="https://linkedin.com/in/shahawajpasha" target="_blank">
-      <img src="linkedin.png" alt="LinkedIn">
-    </a>
-    <a href="mailto:shahawajpasha@gmail.com">
-      <img src="gmail.png" alt="Email">
-    </a>
+    <a href="https://github.com/shahawajpasha" target="_blank"><img src="github.png"></a>
+    <a href="https://linkedin.com/in/shahawajpasha" target="_blank"><img src="linkedin.png"></a>
+    <a href="mailto:shahawajpasha@gmail.com"><img src="gmail.png"></a>
   </div>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <div class="about-text">
-    <p>
-      I am an aspiring Data Analyst focused on turning raw data into clear, actionable insights.
-      I enjoy cleaning data, exploring trends, and building dashboards that support decision-making.
-    </p>
-    <p>
-      My work involves real-world datasets across sales and customer behavior, using Excel, SQL,
-      Python, and Power BI to uncover patterns and communicate results effectively.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Excel</span>
-    <span>SQL</span>
-    <span>Python</span>
-    <span>Power BI</span>
-    <span>Tableau</span>
-    <span>SPSS</span>
-    <span>Data Cleaning</span>
-    <span>EDA</span>
-    <span>Data Visualization</span>
-  </div>
-</section>
-
-  <section>
   <h2>Certifications</h2>
-
   <div class="cert-grid">
 
     <div class="cert-card">
-      <h3>Google Data Analytics Beginners</h3>
+      <h3>Google Data Analytics</h3>
       <p>Google</p>
-      <div class="cert-meta">Skills: KPI Reporting, User Behavior Analysis, Data Visualization</div>
-      <p>
-        Gained advanced hands-on experience in analyzing complex datasets, building KPI-driven reports,
-        and translating user behavior data into actionable business insights using structured analytical
-        frameworks.
-      </p>
+      <div class="cert-meta">KPI Reporting, User Behavior Analysis</div>
+      <p>Applied structured analytical thinking to real-world business problems.</p>
+      <a href="certificates/google-analytics.pdf" target="_blank">View Certificate →</a>
     </div>
 
     <div class="cert-card">
       <h3>Microsoft Power BI Data Analyst</h3>
       <p>Microsoft</p>
-      <div class="cert-meta">Skills: Power BI, DAX, Data Modeling</div>
-      <p>
-        Learned to design end-to-end Power BI solutions including data modeling, DAX calculations,
-        and interactive dashboards focused on business performance and decision support.
-      </p>
+      <div class="cert-meta">Power BI, DAX, Data Modeling</div>
+      <p>Designed interactive dashboards and business-ready reports.</p>
+      <a href="certificates/power-bi.pdf" target="_blank">View Certificate →</a>
     </div>
 
     <div class="cert-card">
-      <h3>Excel for data and Analytics</h3>
+      <h3>Excel for Data Analytics</h3>
       <p>Chegg</p>
-      <div class="cert-meta">Skills: Data Cleaning, Exploratory Analysis, Visualization, Business Insights</div>
-      <p>
-        Learned to turn raw data into meaningful insights using Excel! Mastered data cleaning, exploration, and visualization techniques
-        to support business decisions and stakeholder reporting. Built practical skills to analyze and present data effectively
-      </p>
+      <div class="cert-meta">Data Cleaning, Visualization</div>
+      <p>Analyzed datasets using pivot tables and formulas.</p>
+      <a href="certificates/excel.jpeg" target="_blank">View Certificate →</a>
     </div>
 
     <div class="cert-card">
       <h3>Qlik Sense Business Analyst</h3>
       <p>Qlik</p>
-      <div class="cert-meta">Skills: KPI Dashboards, Data Modeling, Business Analysis</div>
-      <p>
-        Developed KPI-focused dashboards in Qlik Sense, modeled datasets for analytical use,
-        and ensured data accuracy to support informed business decision-making.
-      </p>
+      <div class="cert-meta">KPI Dashboards, Business Analysis</div>
+      <p>Built KPI-driven dashboards for executive insights.</p>
+      <a href="certificates/qlik-ba.pdf" target="_blank">View Certificate →</a>
     </div>
 
     <div class="cert-card">
       <h3>Qlik Sense Data Architect</h3>
       <p>Qlik</p>
-      <div class="cert-meta">Skills: Data Transformation, Scalable Data Models, BI Performance</div>
-      <p>
-        Learned to transform raw data into efficient, scalable data models and build
-        high-performance business intelligence solutions optimized for analytics and reporting.
-      </p>
+      <div class="cert-meta">Scalable Data Models</div>
+      <p>Optimized data models for BI performance.</p>
+      <a href="certificates/qlik-da.pdf" target="_blank">View Certificate →</a>
     </div>
-    
-    <div class="cert-card">
-      <h3>Data Science and Analytics</h3>
-      <p>hp Life|hp Foundation</p>
-      <div class="cert-meta">Skills: EDA, Basic Statistical Analysis, Bussiness Analytics & Insights</div>
-      <p>
-        Explored real-world data to uncover patterns, trends, and insights! Learned to analyze datasets, apply basic statistics, 
-        and transform raw numbers into actionable business decisions. A solid foundation in making data tell a story
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-  <section>
-  <h2>Education</h2>
-
-  <div class="cert-grid">
 
     <div class="cert-card">
-      <h3>B.Sc in Data Science</h3>
-      <p>Kristu Jayanti College</p>
-      <div class="cert-meta">Year: 2023 – 2026</div>
-      <p>
-        Built a strong foundation in analytical thinking, problem-solving, and quantitative concepts.
-        Gained exposure to data handling, statistical methods, and real-world problem analysis through
-        academic coursework and projects.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Projects & Dashboards</h2>
-  <div class="projects">
-
-    <div class="card">
-      <h3>Sales Performance Dashboard</h3>
-      <p>Interactive Power BI dashboard analyzing sales trends and regional performance.</p>
-      <div class="tools">Tools: Power BI, Excel</div>
-      <a href="#">View Dashboard</a>
-    </div>
-
-    <div class="card">
-      <h3>Customer Churn Analysis</h3>
-      <p>Python-based analysis identifying churn patterns and retention drivers.</p>
-      <div class="tools">Tools: Python, Pandas</div>
-      <a href="#">View GitHub</a>
-    </div>
-
-    <div class="card">
-      <h3>SQL Case Study</h3>
-      <p>Business problem-solving using joins, aggregations, and subqueries.</p>
-      <div class="tools">Tools: SQL</div>
-      <a href="#">View Repository</a>
+      <h3>Data Science & Analytics</h3>
+      <p>HP Life | HP Foundation</p>
+      <div class="cert-meta">EDA, Statistics</div>
+      <p>Built a foundation in statistical thinking and analytics.</p>
+      <a href="certificates/hp.pdf" target="_blank">View Certificate →</a>
     </div>
 
   </div>

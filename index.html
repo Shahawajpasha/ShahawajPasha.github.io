@@ -101,10 +101,15 @@ section h2 {
     }
 
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 28px;
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
     .project-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -125,6 +130,15 @@ section h2 {
   box-shadow: 0 0 15px rgba(56,189,248,0.5);
 }
 
+.card a {
+  color: #f8fafc;       /* off-white */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  color: #38bdf8;       /* soft cyan on hover */
+}
 
     .card {
       background: #020617;
@@ -299,21 +313,18 @@ section h2 {
 <section>
   <h2>Projects</h2>
 
-  <div class="projects">
+  <!-- Top two projects -->
+  <div class="projects-grid">
 
     <div class="card">
       <h3>Customer Churn Prediction</h3>
       <p>
         Built a machine learning model to predict customer churn by analyzing
-        historical customer behavior and usage patterns. The project focuses on
-        identifying key churn drivers to help businesses improve retention strategies.
+        historical customer behavior and usage patterns. Focused on identifying
+        key churn drivers to improve retention strategies.
       </p>
-
-      <div class="tools">
-        Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib
-      </div>
-
-      <a href="https://github.com/Shahawajpasha/CUSTOMER-CHURN-PREDICTION" target="_blank">
+      <div class="tools">Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib</div>
+      <a class="project-link" href="https://github.com/Shahawajpasha/CUSTOMER-CHURN-PREDICTION" target="_blank">
         View on GitHub →
       </a>
     </div>
@@ -321,67 +332,52 @@ section h2 {
     <div class="card">
       <h3>Trader Behavior & Sentiment Analysis</h3>
       <p>
-        Analyzed trader behavior using sentiment analysis techniques to understand
-        how emotions and market sentiment influence trading decisions. The project
-        combines text analysis with behavioral insights for data-driven conclusions.
+        Analyzed trader behavior using sentiment analysis to understand how emotions
+        and market sentiment influence trading decisions.
       </p>
-
-      <div class="tools">
-        Tools: Python, NLP, Pandas, Text Processing, Data Visualization
-      </div>
-
-      <a href="https://github.com/Shahawajpasha/Trader-Behavior-Sentiment-Analysis" target="_blank">
+      <div class="tools">Tools: Python, NLP, Pandas, Text Processing, Data Visualization</div>
+      <a class="project-link" href="https://github.com/Shahawajpasha/Trader-Behavior-Sentiment-Analysis" target="_blank">
         View on GitHub →
       </a>
     </div>
 
-    <div class="card">
-  <h3>Credit Card Transaction Analysis (Excel)</h3>
-
-  <p><strong>Tools:</strong> Microsoft Excel</p>
-  <p><strong>Techniques:</strong> Pivot Tables, SUMIFS, Conditional Formatting, Date Functions, Data Visualization</p>
-  <p><strong>Dataset:</strong> Synthetic banking-style dataset (500 records) simulating real-world credit card transactions.</p>
-
-  <p><strong>Dashboard & Dataset Preview</strong></p>
-
-  <div class="project-images">
-    <img src="DASHBOARDD.jpeg" alt="Excel Credit Card Dashboard">
-    <img src="dataset.jpg" alt="Sample Credit Card Transaction Dataset">
-    <img src="PIVOT.jpeg" alt="Excel pivot charts">
   </div>
 
-  <p style="font-size: 0.85rem; color: #94a3b8;">
-    Screenshots showcase the interactive Excel dashboard and a sample view of the
-    synthetic dataset used for analysis.
-  </p>
+  <!-- Excel full-width project -->
+  <div class="projects-grid-full">
 
-  <p><strong>Problem</strong></p>
-  <p>
-    Banks need to monitor transaction data to understand customer spending behavior
-    and detect potentially fraudulent or unusual activity.
-  </p>
+    <div class="card full-width">
+      <h3>Credit Card Transaction Analysis (Excel)</h3>
 
-  <p><strong>What I Did</strong></p>
-  <ul>
-    <li>Created calculated fields to identify high-value and suspicious transactions</li>
-    <li>Built pivot tables for monthly, category-wise, and behavioral analysis</li>
-    <li>Designed an interactive Excel dashboard with KPIs and charts</li>
-  </ul>
+      <p><strong>Tools:</strong> Microsoft Excel</p>
+      <p><strong>Techniques:</strong> Pivot Tables, SUMIFS, Conditional Formatting, Date Functions, Data Visualization</p>
+      <p><strong>Dataset:</strong> Synthetic banking-style dataset (500 records)</p>
 
-  <p><strong>Key Insights</strong></p>
-  <ul>
-    <li>Observed higher spending patterns during weekdays</li>
-    <li>Flagged unusually high-value transactions for risk monitoring</li>
-  </ul>
+      <p>
+        Analyzed transaction data to understand spending behavior, identify high-value customers,
+        and flag unusual transactions for potential risk monitoring.
+      </p>
 
-  <a href="Credit card spending analysis.xlsx" target="_blank">
-    View Project →
-  </a>
-</div>
+      <ul>
+        <li>Built KPI cards and trend charts</li>
+        <li>Identified weekend vs weekday spending patterns</li>
+        <li>Flagged unusually high-value transactions</li>
+      </ul>
 
+      <div class="preview-images">
+        <img src="DASHBOARDD.jpeg" alt="Dashboard Preview">
+        <img src="PIVOT.jpeg" alt="Pivot Preview">
+        <img src="dataset.jpg" alt="Dataset Preview">
+      </div>
+
+      <a class="project-link" href="Credit card spending analysis.xlsx" target="_blank">
+        View Project →
+      </a>
+    </div>
 
   </div>
 </section>
+
 
 
 <section>

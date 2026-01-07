@@ -111,20 +111,19 @@ section h2 {
 }
 
   .project-images {
-  display: flex;                /* force single row */
+  display: flex !important;
   gap: 10px;
-  margin: 14px 0;
-  flex-wrap: nowrap;           /* no wrapping */
+  margin-top: 12px;
 }
 
 .project-images img {
-  width: 65px;                /* SMALL thumbnail */
-  height: 45px;
-  object-fit: cover;           /* crop nicely */
+  width: 90px !important;
+  height: 55px !important;
+  max-width: 90px !important;
+  max-height: 55px !important;
+  object-fit: cover !important;
   border-radius: 6px;
   border: 1px solid #1e293b;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-images img:hover {

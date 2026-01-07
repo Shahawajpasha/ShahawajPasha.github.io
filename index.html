@@ -110,29 +110,28 @@ section h2 {
   grid-column: 1 / -1;
 }
 
-   .project-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 16px 0;
-  max-width: 60px;        /* LIMIT grid width */
+  .project-images {
+  display: flex;                /* force single row */
+  gap: 10px;
+  margin: 14px 0;
+  flex-wrap: nowrap;           /* no wrapping */
 }
 
 .project-images img {
-  width: 50%;
-  max-width: 50px;        /* HARD LIMIT */
-  height: 10px;           /* HARD LIMIT */
-  object-fit: cover;
-  border-radius: 4px;
+  width: 110px;                /* SMALL thumbnail */
+  height: 70px;
+  object-fit: cover;           /* crop nicely */
+  border-radius: 6px;
   border: 1px solid #1e293b;
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-images img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 12px rgba(56,189,248,0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(56,189,248,0.4);
 }
+
 
 
 .card a {

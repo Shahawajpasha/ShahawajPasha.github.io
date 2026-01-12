@@ -90,21 +90,34 @@ section h2 {
 
 
     .skills span {
-      display: inline-block;
-      background: linear-gradient(135deg, #1e293b, #020617);
-      padding: 11px 16px;
-      border-radius: 22px;
-      margin: 7px;
-      font-size: 0.9rem;
-      border: 1px solid #334155;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-    }
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px 15px;
+  border-radius: 999px;
+  margin: 6px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: none;
+}
 
-    .projects {
+    .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+    .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
+
+.projects-grid-full {
+  margin-top: 28px;
+}
+
 
 .full-width {
   grid-column: 1 / -1;
@@ -183,10 +196,11 @@ section h2 {
     }
 
     .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
 
     .cert-card {
       background: #020617;
@@ -307,7 +321,6 @@ section h2 {
         academics with certifications and applied learning.
       </p>
     </div>
-  </div>
 </section>
 
 

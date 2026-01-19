@@ -89,24 +89,44 @@ section h2 {
 }
 
 
-    .skills span {
+    /* Skills section layout */
+.skills-group {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Left-side category heading */
+.skills-group h4 {
+  margin: 6px 0 0;
+  color: #7dd3fc;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+/* Skill pills container */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Individual skill pill */
+.skills span {
   display: inline-block;
   background: rgba(255, 255, 255, 0.04);
   padding: 10px 15px;
   border-radius: 999px;
-  margin: 6px;
+  margin: 6px 8px 6px 0;
   font-size: 0.9rem;
   border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: none;
 }
 
-    .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
 
     .projects-grid {
   display: grid;

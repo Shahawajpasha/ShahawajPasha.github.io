@@ -89,14 +89,13 @@ section h2 {
 }
 
 
-    /* Skills section layout */
-.skills-group {
+    .skills-group {
   display: grid;
-  grid-template-columns: 220px 60px 1fr;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 30px;
+  grid-template-columns: 220px 80px 1fr;
+  align-items: start;
+  margin-bottom: 34px;
 }
+
 
 /* Left-side category heading */
 .skills-group h4 {
@@ -107,14 +106,14 @@ section h2 {
   text-align: left;
 }
 
-/* Skill pills container */
 .skills {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: flex-start;
-  max-width: 100%;
-  margin: 0;
+  align-items: center;
 }
+
 
 /* Individual skill pill */
 .skills span {
@@ -126,28 +125,34 @@ section h2 {
   font-size: 0.9rem;
   border: 1px solid rgba(255,255,255,0.12);
 }
-/* Arrow container */
 .skill-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  height: 24px;
+  margin-top: 8px;
 }
 
 /* Arrow line */
 .skill-arrow::before {
   content: "";
-  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 55px;
   height: 2px;
-  background: linear-gradient(to right, #38bdf8, transparent);
+  background: linear-gradient(to right, #38bdf8, rgba(56,189,248,0.2));
+  transform: translateY(-50%);
 }
 
 /* Arrow head */
 .skill-arrow::after {
-  content: "›";
-  color: #38bdf8;
-  font-size: 1.6rem;
-  margin-left: 4px;
-  line-height: 1;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-left: 8px solid #38bdf8;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  transform: translateY(-50%);
 }
 
 

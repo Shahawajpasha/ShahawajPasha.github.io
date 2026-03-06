@@ -130,12 +130,12 @@ section h2 {
   transform: translateY(-2px);
 }
 
-    .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
+    .projects-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:28px;
 }
-
+    
 .projects-grid-full {
   margin-top: 28px;
 }
@@ -405,100 +405,122 @@ section h2 {
 
 <section>
   <h2>Projects</h2>
+
+  <!-- GRID PROJECTS -->
+
   <div class="projects-grid">
-    <div class="card">
-      <h3>Customer Churn Prediction</h3>
-      <p>
-        Built a machine learning model to predict customer churn by analyzing
-        historical customer behavior and usage patterns. Focused on identifying
-        key churn drivers to improve retention strategies.
-      </p>
-      <div class="tools">Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib</div>
-      <a class="project-link" href="https://github.com/Shahawajpasha/CUSTOMER-CHURN-PREDICTION" target="_blank">
-        View on GitHub →
-      </a>
-    </div>
 
-    <div class="card">
-      <h3>Trader Behavior & Sentiment Analysis</h3>
-      <p>
-        Analyzed trader behavior using sentiment analysis to understand how emotions
-        and market sentiment influence trading decisions.
-      </p>
-      <div class="tools">Tools: Python, NLP, Pandas, Text Processing, Data Visualization</div>
-      <a class="project-link" href="https://github.com/Shahawajpasha/Trader-Behavior-Sentiment-Analysis" target="_blank">
-        View on GitHub →
-      </a>
-    </div>
+```
+<!-- Project 1 -->
+<div class="card">
+  <h3>Customer Churn Prediction</h3>
+  <p>
+    Built a machine learning model to predict customer churn by analyzing
+    historical customer behavior and usage patterns. Focused on identifying
+    key churn drivers to improve retention strategies.
+  </p>
+  <div class="tools">Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib</div>
+  <a class="project-link" href="https://github.com/Shahawajpasha/CUSTOMER-CHURN-PREDICTION" target="_blank">
+    View on GitHub →
+  </a>
+</div>
 
+<!-- Project 2 -->
+<div class="card">
+  <h3>Trader Behavior & Sentiment Analysis</h3>
+  <p>
+    Analyzed trader behavior using sentiment analysis to understand how emotions
+    and market sentiment influence trading decisions.
+  </p>
+  <div class="tools">Tools: Python, NLP, Pandas, Text Processing, Data Visualization</div>
+  <a class="project-link" href="https://github.com/Shahawajpasha/Trader-Behavior-Sentiment-Analysis" target="_blank">
+    View on GitHub →
+  </a>
+</div>
+
+<!-- Project 3 -->
+<div class="card">
+  <h3>Financial Fraud Detection using Machine Learning</h3>
+  <p>
+    Developed a machine learning pipeline to detect fraudulent financial transactions.
+    Performed data cleaning, exploratory data analysis (EDA), feature engineering,
+    and trained classification models to identify suspicious activities in transaction data.
+    Focused on improving fraud detection accuracy while minimizing false positives.
+  </p>
+  <div class="tools">
+    Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
   </div>
-
-  <div class="projects-grid-full">
-    <div class="card full-width">
-      <h3>Credit Card Transaction Analysis (Excel)</h3>
-      <p><strong>Tools:</strong> Microsoft Excel</p>
-      <p><strong>Techniques:</strong> Pivot Tables, SUMIFS, Conditional Formatting, Date Functions, Data Visualization</p>
-      <p><strong>Dataset:</strong> Synthetic banking-style dataset (500 records)</p>
-      <p>
-        Analyzed transaction data to understand spending behavior, identify high-value customers,
-        and flag unusual transactions for potential risk monitoring.
-      </p>
-
-      <ul>
-        <li>Built KPI cards and trend charts</li>
-        <li>Identified weekend vs weekday spending patterns</li>
-        <li>Flagged unusually high-value transactions</li>
-      </ul>
-
-      <div class="preview-images">
-        <img src="DASHBOARDD.jpeg" alt="Dashboard Preview">
-        <img src="PIVOT.jpeg" alt="Pivot Preview">
-        <img src="dataset.jpg" alt="Dataset Preview">
-      </div>
-
-      <a class="project-link" href="Credit card spending analysis.xlsx" target="_blank">
-        View Project →
-      </a>
-    </div>
-
-    <div class="card">
-
-<h3>Financial Fraud Detection using Machine Learning</h3>
-
-<p>
-Developed a machine learning pipeline to detect fraudulent financial transactions.
-Performed data cleaning, exploratory data analysis (EDA), feature engineering,
-and trained classification models to identify suspicious activities in transaction data.
-Focused on improving fraud detection accuracy while minimizing false positives.
-</p>
-
-<div class="tools">
-Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+  <a class="project-link"
+     href="https://github.com/Shahawajpasha/financial-fraud-detection-ml"
+     target="_blank">
+    View on GitHub →
+  </a>
 </div>
 
-<a class="project-link"
-href="https://github.com/Shahawajpasha/financial-fraud-detection-ml"
-target="_blank">
-View on GitHub →
-</a>
-
-</div>
-    
-    <div class="card">
+<!-- Project 4 -->
+<div class="card">
   <h3>Banking Transaction Analysis (SQL)</h3>
   <p>
     Analyzed banking transaction data using SQL to uncover customer spending behavior,
     category performance, risk patterns, and revenue trends. Focused on answering
-    business-driven questions such as top customers, high-risk transactions, and
-    weekday vs weekend behavior.
+    business-driven questions such as top customers, high-risk transactions,
+    and weekday vs weekend behavior.
   </p>
-  <div class="tools">Tools: SQL (SQLite), Joins, Aggregations, Date Functions</div>
-  <a class="project-link" href="https://github.com/Shahawajpasha/banking-sql-analysis" target="_blank">
+  <div class="tools">
+    Tools: SQL (SQLite), Joins, Aggregations, Date Functions
+  </div>
+  <a class="project-link"
+     href="https://github.com/Shahawajpasha/banking-sql-analysis"
+     target="_blank">
     View on GitHub →
   </a>
 </div>
+```
+
   </div>
+
+  <!-- FULL WIDTH PROJECT -->
+
+  <div class="projects-grid-full">
+
+```
+<div class="card full-width">
+  <h3>Credit Card Transaction Analysis (Excel)</h3>
+
+  <p><strong>Tools:</strong> Microsoft Excel</p>
+  <p><strong>Techniques:</strong> Pivot Tables, SUMIFS, Conditional Formatting,
+     Date Functions, Data Visualization</p>
+  <p><strong>Dataset:</strong> Synthetic banking-style dataset (500 records)</p>
+
+  <p>
+    Analyzed transaction data to understand spending behavior, identify high-value
+    customers, and flag unusual transactions for potential risk monitoring.
+  </p>
+
+  <ul>
+    <li>Built KPI cards and trend charts</li>
+    <li>Identified weekend vs weekday spending patterns</li>
+    <li>Flagged unusually high-value transactions</li>
+  </ul>
+
+  <div class="preview-images">
+    <img src="DASHBOARDD.jpeg" alt="Dashboard Preview">
+    <img src="PIVOT.jpeg" alt="Pivot Preview">
+    <img src="dataset.jpg" alt="Dataset Preview">
+  </div>
+
+  <a class="project-link"
+     href="Credit card spending analysis.xlsx"
+     target="_blank">
+    View Project →
+  </a>
+</div>
+```
+
+  </div>
+
 </section>
+
 
 <section>
   <h2>Certifications</h2>

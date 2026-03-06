@@ -131,9 +131,15 @@ section h2 {
 }
 
     .projects-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:28px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:28px;
+  align-items:stretch;
+}
+    .card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
     
 .projects-grid-full {
